@@ -11,9 +11,39 @@ input from the user.
 find Simple Interest.
 4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
 (Use if conditions)
-5. Take 2 numbers as input and print the largest number.
-6. Input currency in rupees and output in USD.
-7. To calculate Fibonacci Series up to n numbers.
-8. To find out whether the given String is Palindrome or not.
-9. To find Armstrong Number between two given number.
+
+import java.util.Scanner;
+public class question_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number 1 : ");
+        float num1 = sc.nextInt();
+        System.out.print("Enter Number 2 : ");
+        float num2 = sc.nextInt();
+        System.out.println(" Select Your Option");
+        System.out.println( " 1 = + ");
+        System.out.println( " 2 = - ");
+        System.out.println( " 3 = * ");
+        System.out.println( " 4 = / ");
+        int option = sc.nextInt();
+        if(option == 1 ){
+            System.out.println( num1 + " + " + num2 + " = " + (num2+num1));
+        }
+        else if(option == 2 ){
+            System.out.println( num1 + " - " + num2 + " = " + (num1-num2));
+        }
+        else if(option == 3 ){
+            System.out.println( num1 + " * " + num2 + " = " + (num2*num1));
+        }
+        if(option == 4 ){
+            System.out.println( num1 + " / " + num2 + " = " + (num1/num2));
+        }
+    }
+}
+
+6. Take 2 numbers as input and print the largest number.
+7. Input currency in rupees and output in USD.
+8. To calculate Fibonacci Series up to n numbers.
+9. To find out whether the given String is Palindrome or not.
+10. To find Armstrong Number between two given number.
 
